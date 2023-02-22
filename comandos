@@ -1,0 +1,33 @@
+# comando para forçar o pash - git  push -f origin <nome da branch>
+# comando para visualizar as alterações feitas - git diff
+# DUNDER (_pycache_) É UM TIPO DE ARQUIVO BINÁRIO CRIADO PELO PYTHON PARA FACILITAR A LEITURA DOS 
+# MÓDULOS CRIADOS
+# O DUDER NÃO É INTERESSTE NOS adds, POR ISSO UTILIZAMOS CRIAMOS UM 
+# ARQUIVO (.gitiginore) - NESTE CASO NÃO FOI NECESSÁRIO DEVIDO HÁ CONFIGURAÇÃO NA CRIAÇÃO DO REPOSITÓRIO.
+# comando para resolver comflitos - git rebase <no da branch>
+#  e resolvido o conflito git rebase --continue 
+# Comando para vizualizar branch - git branch
+# Deletando branch local - git  branch -D <nome da branch>
+# Deletando branch  remoto - git push origin:<nome da branch>
+# Comando para deletar  commit - git reset <apote de onde o reset>
+# EX: git  reset HEAD ~1
+# comando para configuração - git config --gobla user.name <nome>  e git config --gobal user.email<email>
+# comando para entrar na pasta através do terminal do git brash - cd <nome da pasta no diretório>
+# comando para abrir o vs code no terminal do git brash - code .
+# comando para ativação do ambiente virtual -   .\venv\Scripts\activate.ps1
+
+# comando para navegar nas pastas - cd
+# comando para visulizar os contudo das pastas -ls 
+# comando para criar ambiente virtual - python -m venv <o nome que iremos dar ao nosso ambiente> 
+# comando para ativar o ambiete virtual- <nome do ambiente virtual>\Scripts\activate
+# comando para visualização do conteúdo do nosso ambiente virtual - pip list  
+# comando para desativar o ambiente vitual - deactvate
+# comando para criar uma versão - git tang <nome da tag>(ex: git tag v1.0.0) logo após 
+# realizamos um pash - git pash origin v1.0.0
+
+#   FEATURE BRANCH - CRIAMOS UM BRANCH E FAZEMOS O MERGE PARA BRANCH MAIN
+
+# rebase - "comando ultilzado quando se deseja à atualização de uma branch para outra" 
+# já na branck que se deseja atualizar  realizamos o comando
+#  - git rebase <nome da branch que estamos baixando atualização> 
+# Ex: git rebase main - main é branch que esta nos atualizando.
