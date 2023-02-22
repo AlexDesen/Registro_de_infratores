@@ -1,6 +1,8 @@
-def cadastro_infrator(cursor,conexao):
-     
-    print("--------------------------------")  
+import datetime
+
+def cadastro_registro(cursor,conexao):
+    print("--------------------------------")
+    # INSERINDO CADASTRO DO INFRATOR  
     print("Área para cadastro do infrator.")
     infrator = input(" Nome do infrator: ")
     cpf = input("CPF do infrator: ")
@@ -10,7 +12,16 @@ def cadastro_infrator(cursor,conexao):
     inserir = '''INSERT INTO cadastro_infrator (infrator, cpf, nome_pai, nome_mae) 
     VALUES(?,?,?,?)''';     
     valor = [infrator, cpf, nome_pai, nome_mae]
-    cursor.execute(inserir, valor)
-    conexao.commit()
+    comando = cursor.execute(inserir, valor)
+         
+    # INSERINDO REGISTRO   
+    data_do_registro = datetime.date.today()
+    id_cadastro_infrator = cursor.lastrowid
+    valores = [id_cadastro_infrator, data_do_registro]
+    inserir_registro = '''INSERT INTO registro(id_cadastro_infrator, data_do_registro )
+     VALUES(?,?)'''
+    cursor.execute(inserir_registro, valores)
+    conexao.commit()    
     conexao.close()
-    print("Cadastro realizado com sucesso!")
+    print("Cadastro e registro realizado com sucesso!")
+
